@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href={{ url_for('static', filename='css/miEstilo.css') }}>
+</head>
+
+<body>
+    <header>
+        <h1>logo</h1>
+        <a href="#">INICIO</a>
+        <a href="#">CARTELERA</a>
+        <a href="#">TEATROS</a>
+        <a href="#">CONFITERIA</a>
+        <nav>
+          <ul>
+            <li><a href="#">REGISTRARSE</a></li>
+            <li><a href="#">INGRESAR</a></li>
+            <li><a href="#">0</a></li>
+          </ul>
+        </nav>
+      </header>
+    <!--
+    <div id="login" class="form">
+        <form  action="mysuperscript.php" autocomplete="on"> 
+          <h1>Login</h1> 
+          <p> 
+              <label for="username" class="uname" > Nombre de usuario: </label>
+              <input id="username" name="username" required="required" type="text" placeholder="Tu nombre de usuario"/>
+          </p>
+          <p> 
+              <label for="password" class="youpasswd"> Contraseña:</label>
+              <input id="password" name="password" required="required" type="password" placeholder="Tu password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número y una letra minúscula y mayúscula, y al menos 8 o más caracteres"/> 
+          </p>
+      
+          <p class="login button"> 
+              <input type="submit" value="Login" /> 
+          </p>
+          <p class="change_link">
+              Aún no eres miembro
+              <a href="#toregister" class="to_register">Regístrate</a>
+          </p>
+        </form>
+      </div>
+-->
+      
+      
+<div id="register" class="form">
+    <form  action="mysuperscript.php" autocomplete="on" method="get" 
+    name="formRegistro" onsubmit="return validar_formulario()">
+      
+
+      <div class="imagen">
+        <img src="static/img/logo.png" alt="">
+      </div>
+
+      <h1> Registro</h1> 
+      <div>
+     
+          <label for="name" class="uname" >Nombre</label>
+          <input id="name" name="usernamesignup" required="required" type="text" placeholder="Nombre" />
+      
+    </div>
+    <div>
+       
+        <label for="ape" class="uname" >Apellido</label>
+        <input id="ape" name="usernamesignup" required="required" type="text" placeholder="Apellido" />
+   
+    </div>
+    <div>
+        <label for="">Sexo:</label>
+        <input type="radio" name="sexo" id="F">Femenino
+        <input type="radio" name="sexo" id="M">Masculino
+    </div>
+    <div>
+      <label for="iden">Identificación:</label>
+      <input id="number" name="numero" required="required"  placeholder="Solo número" /> 
+    </div>
+    <div>
+        <label for="date">Fecha de Nacimiento:</label>
+        <input type="date" id="date" name="trip-start"
+        value="2018-07-22"
+        min="1930-01-01" max="2100-12-31">
+    </div>
+    <div>
+      <label for="celular" class="celuar" >Núm. Celular</label>
+      <input id="celuar" name="celular" required="required" type="text" placeholder="3130000000" />
+    </div>
+    <div>
+      
+          <label for="emailsignup" class="youmail" > Correo</label>
+          <input id="email" name="emailsignup" required="required" type="email" placeholder="ejemplo@mail.com"/> 
+      
+    </div>
+    <div class="contracena">
+     
+          <label for="passwordsignup" class="youpasswd" >Contraceña </label>
+          <input id="passwor" name="passwordsignup" required="required" type="password"
+           placeholder="eg. X8df!90EO" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+           title="Debe contener al menos un número y una letra minúscula y mayúscula, y al menos 8 o más caracteres"/> 
+                    
+    </div>
+    <div>
+      
+          <label for="passwordsignup_confirm" class="youpasswd" >Confirma contraceña </label>
+          <input id="passwordconfirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+     
+    </div>
+    <div>
+      <div>
+        <input type="checkbox" name="datos" id="datos">
+        <label for="datos">Declaro haber leído y aceptar las
+            condiciones generales del programa y la normativa sobre protección de datos</label>
+    </div>
+    </div>
+    <div>
+      
+          <input type="submit" value="Registrarce"/> 
+      
+    </div>
+    
+    </form>
+  </div>
+</body>
+<script src={{ url_for('static', filename='js/nombre.js') }}></script>
+</html>

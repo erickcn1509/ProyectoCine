@@ -1,0 +1,77 @@
+header{
+    display: block;
+    background-color: #F70404;
+    width:100%;
+}
+header h1{
+    color: #FAF6F6;
+    text-transform: uppercase;
+    text-align: left;
+    width:7%;
+    display:inline-block;
+}
+
+header a{
+    color: #FAF6F6;
+    text-align: left;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nav{
+    text-align: right;
+    display:inline-block;
+    width:60%;
+}
+
+header ul{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0.5em auto;
+    text-align: center;
+}
+
+header ul li{
+    display: inline-block;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #FAF6F6;
+    font-size: 20px;
+}
+form {
+    width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    margin: auto;
+    background:  #f0f4c3 ;
+}
+
+form input {
+    margin-top: 15px;
+}
+
+form input[type="submit"] {
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+form input[type="text"], form input[type="date"], form input[type="email"], 
+form input[type="password"], form input[type="submit"] {
+    width: 250px;
+}
+form h1 {
+    font-family: serif;
+    text-align: center;
+    color: #377ba8;
+    background: lightblue;
+}
+form img{
+    display: block;
+    margin: auto;
+    padding-right: 5px;
+    width: 180px;
+}
