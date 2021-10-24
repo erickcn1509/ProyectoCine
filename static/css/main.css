@@ -195,3 +195,23 @@ header ul li a {
     display: flex;
     justify-content: space-between;
 }
+
+.centrarCardConf{
+    text-align: center !important;
+  }
+
+  .precioLabel{
+      font-size: 20px;
+      color:red;
+  }
+
+  .productoLabel{
+      font-size: 21px;
+  }
+
+  .selectConfiteria{
+      font-size: 18px;
+      border-radius: 10px ;
+        border: 1px solid;
+        margin-left: 10px;
+  }

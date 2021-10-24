@@ -153,9 +153,11 @@ header ul li a{
   
   .containerCards {
     padding: 2px 16px;
+    
   }
 
   .containerMain{
     display: flex;
     justify-content: space-between;
+    
   }

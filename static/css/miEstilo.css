@@ -3,6 +3,7 @@ header{
     background-color: #F70404;
     width:100%;
 }
+
 header h1{
     color: #FAF6F6;
     text-transform: uppercase;
@@ -14,7 +15,7 @@ header h1{
 header a{
     color: #FAF6F6;
     text-align: left;
-    text-decoration: none;
+    text-decoration: none ;
     margin-right: 20px;
 }
 
@@ -35,43 +36,49 @@ header ul li{
     display: inline-block;
 }
 
-header ul li a{
-    text-decoration: none;
+header a{
+    text-decoration: none !important;
     color: #FAF6F6;
     font-size: 20px;
 }
+
 form {
-    width: 500px;
+    width: 750px !important;
     padding: 30px;
     border-radius: 10px;
     margin: auto;
-    background:  #f0f4c3 ;
+    background:  whitesmoke ;
 }
 
-form input {
-    margin-top: 15px;
+.contenedorImg{
+    width: 200px;
+    height: 200px;
 }
 
-form input[type="submit"] {
-    font-weight: bold;
+.imagen{
     display: block;
     margin: auto;
-    margin-top: 15px;
+    width: 300px;
+    height: 300px;
 }
 
-form input[type="text"], form input[type="date"], form input[type="email"], 
-form input[type="password"], form input[type="submit"] {
-    width: 250px;
+form label{
+    font-size: 18px;
 }
-form h1 {
-    font-family: serif;
-    text-align: center;
-    color: #377ba8;
-    background: lightblue;
+
+form input{
+    margin-top: 6px !important;
 }
-form img{
-    display: block;
-    margin: auto;
-    padding-right: 5px;
-    width: 180px;
+
+.row{
+    margin-top: 15px !important;
+}
+
+.redondear{
+    border-radius: 20px !important;
+}
+
+.sizeRadio{
+    font-size: 20px !important;
+    margin-right: 5px;
 }

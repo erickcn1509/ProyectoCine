@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <!-- REFERENCE TO OUR CSS FILE -->
-      <link rel=StyleSheet href="../static/css/main.css" type="text/css" media=screen>
-    
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Confiteria</title>
-    </head>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- REFERENCE TO OUR CSS FILE -->
+  <link rel=StyleSheet href="../static/css/main.css" type="text/css" media=screen>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confiteria</title>
+</head>
 
 <body>
   <header>
     <h1> Logo </h1>
-    <a href= "../index.html"> INICIO </a>
-    <a href= "# "> CARTELERA </a>
-    <a href= "# "> TEATROS </a>
-    <a href= "confiteria.html"> CONFITERIA </a>
+    <a href="../index.html"> INICIO </a>
+    <a href="# "> CARTELERA </a>
+    <a href="# "> TEATROS </a>
+    <a href="confiteria.html"> CONFITERIA </a>
     <nav>
       <ul>
         <li><a href="registro.html">REGISTRARSE</a></li>
@@ -28,15 +29,149 @@
     </nav>
   </header>
 
-<form action="confiteria.html"><br>
-  <label for="fname">  BUSCAR EN:</label>
-  <input type="text" id="fname" name="fname" value=" Bogotá">
-  <label for="lname">  CINE:</label>
-  <input type="text" id="lname" name="lname" value="Floresta">
-  <input type="submit" value="Buscar">
-</form> 
-<img src="../static/img/confiteria.jpg" alt="escoge el combo que desees" width="1350" height="1000">
+  <div class="row">
+    <form action="confiteria.html"><br>
+      <label for="fname" style="font-size: 20px;margin-left: 20px;"> Buscar en:</label>
+      <select class="selectConfiteria">
+        <option>Bogotá</option>
+        <option>Medellin</option>
+        <option>Cali</option>
+        <option>Santa Marta</option>
+        <option>Bucaramanga</option>
+      </select>
+      <!-- <input type="text" id="fname" name="fname" value=" Bogotá"> -->
+      <label for="lname" style="font-size: 20px;margin-left: 30px;"> Cine:</label>
+      <select class="selectConfiteria">
+        <option>Floresta</option>
+        <option>Cinemark</option>
+        <option>Cine Colombia</option>
+        <option>Cineland</option>
+        <option>CineUni</option>
+      </select>
+      <!-- <input type="text" id="lname" name="lname" value="Floresta"> -->
+      <!-- <input type="submit" value="Buscar"> -->
+    </form>
+  </div>
+
+  <div class="containerMain" style="margin-top: 40px;margin-left: 20px;margin-right: 20px;">
+
+    <div class="card" style="width: 250px;">
+      <img src="../static/img/comboAmigos.jpg" alt="Avatar" style="width:100%;height: 280px;">
+      <div class="containerCards centrarCardConf">
+        <h4><b class="productoLabel">Combo Amigos</b></h4>
+        <p class="precioLabel">$15.000</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 250px;">
+      <img src="../static/img/comboPareja.png" alt="Avatar" style="width:100%;height: 280px;">
+      <div class="containerCards centrarCardConf">
+        <h4><b class="productoLabel">Combo Pareja</b></h4>
+        <p class="precioLabel">$17.000</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 250px;">
+      <img src="../static/img/comboPersonal.jfif" alt="Avatar" style="width:100%;height: 280px;">
+      <div class="containerCards centrarCardConf">
+        <h4><b class="productoLabel">Combo Personal</b></h4>
+        <p class="precioLabel">$11.000</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 250px;">
+      <img src="../static/img/comboSaludable.png" alt="Avatar" style="width:100%;height: 280px;">
+      <div class="containerCards centrarCardConf">
+        <h4><b class="productoLabel">Combo Saludable</b></h4>
+        <p class="precioLabel">$18.000</p>
+      </div>
+    </div>
+
+
+
+    <div class="card" style="width: 250px;">
+      <img src="../static/img/crispeta750.jfif" alt="Avatar" style="width:100%;height: 280px;">
+      <div class="containerCards centrarCardConf">
+        <h4><b class="productoLabel">Crispeta Mediana</b></h4>
+        <p class="precioLabel">$13.000</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 250px;">
+      <img src="../static/img/crispetaPequena.png" alt="Avatar" style="width:100%;height: 280px;">
+      <div class="containerCards centrarCardConf">
+        <h4><b class="productoLabel">Crispeta Pequeña</b></h4>
+        <p class="precioLabel">$9.000</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="containerMain" style="margin-top: 40px;margin-left: 20px;margin-right: 20px;">
+    <div class="card" style="width: 250px;">
+      <img src="../static/img/detoditoMix.jpg" alt="Avatar" style="width:100%;height: 280px;">
+      <div class="containerCards centrarCardConf">
+        <h4><b class="productoLabel">Detodito Mix</b></h4>
+        <p class="precioLabel">$4.000</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 250px;">
+      <img src="../static/img/detoditoPicante.jpg" alt="Avatar" style="width:100%;height: 280px;">
+      <div class="containerCards centrarCardConf">
+        <h4><b>Detodito Picante</b></h4>
+        <p class="precioLabel">$4.000</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 250px;">
+      <img src="../static/img/doritos.jpg" alt="Avatar" style="width:100%;height: 280px;">
+      <div class="containerCards centrarCardConf">
+        <h4><b class="productoLabel">Doritos</b></h4>
+        <p class="precioLabel">$3.000</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 250px;">
+      <img src="../static/img/glacialFamiliar.png" alt="Avatar" style="width:100%;height: 280px;">
+      <div class="containerCards centrarCardConf">
+        <h4><b class="productoLabel">Glacial Familiar</b></h4>
+        <p class="precioLabel">$6.000</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 250px;">
+      <img src="../static/img/miniCrispeta.jfif" alt="Avatar" style="width:100%;height: 280px;">
+      <div class="containerCards centrarCardConf">
+        <h4><b class="productoLabel">Mini Crispeta</b></h4>
+        <p class="precioLabel">$10.000</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 250px;">
+      <img src="../static/img/ponyMini.jpg" alt="Avatar" style="width:100%;height: 280px;">
+      <div class="containerCards centrarCardConf">
+        <h4><b class="productoLabel">Pony Mini</b></h4>
+        <p class="precioLabel">$2.000</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="containerMain" style="margin-top: 40px;margin-left: 20px;margin-right: 20px;">
+    <div class="card" style="width: 250px;">
+      <img src="../static/img/cocacola.jpg" alt="Avatar" style="width:100%;height: 280px;">
+      <div class="containerCards centrarCardConf">
+        <h4><b class="productoLabel">Coca Cola</b></h4>
+        <p class="precioLabel">$4.000</p>
+      </div>
+    </div>
+
+  </div>
+
+
 
 
 </body>
+
 </html>
