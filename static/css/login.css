@@ -42,44 +42,39 @@ header a{
     font-size: 20px;
 }
 
-form {
-    width: 750px !important;
-    padding: 30px;
+form  {
+    width: 400px !important;
+    height: 200px;
+    padding: 15px;
     border-radius: 10px;
     margin: auto;
-    background:  whitesmoke ;
+    color: blue;
+    background-color: aquamarine ;
+
 }
-
-
-.contenedorImg{
-    width: 200px;
-    height: 200px;
-}
-
 .imagen{
     display: block;
     margin: auto;
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
+    font-size: 30px;
+   
+
+    
+}
+form input{
+    margin-top: 6px !important;
 }
 
 form label{
     font-size: 18px;
 }
 
-form input{
-    margin-top: 6px !important;
-}
-
-.row{
-    margin-top: 15px !important;
-}
-
-.redondear{
-    border-radius: 20px !important;
-}
-
-.sizeRadio{
-    font-size: 20px !important;
-    margin-right: 5px;
+form {
+    padding: 0px 0px 0px 0px;
+    margin-top: 5px;
+    border: 3px solid rgb(221, 12, 57);
+    
+    border-radius: 10px;
+    text-align: center;
 }

@@ -31,8 +31,8 @@
     <nav>
       <ul>
         <li><a href="registro.html">REGISTRARSE</a></li>
-        <li><a href="#">INGRESAR</a></li>
-        <li><a href="#" >0</a></li>
+        <li><a href="ingresar.html">INGRESAR</a></li>
+        <li><a href="#" ></a></li>
       </ul>
     </nav>
   </header>
@@ -65,7 +65,7 @@
 
   <div class="container">
     <div id="register" class="form">
-      <form action="index.html" autocomplete="on" method="get" name="formRegistro"
+      <form action="" autocomplete="on" method="post" name="formRegistro"
         onsubmit="return validar_formulario()">
 
         <h1 align="center" style="margin-bottom: 30px;"> Registro</h1>
@@ -73,32 +73,32 @@
         <div class="row">
           <div class="col-md-6">
             <label for="name" class="uname">NOMBRES</label><br>
-            <input id="name" class="form-control" name="usernamesignup" required="required" type="text" placeholder="Nombres" />
+            <input id="name" class="form-control" name="nombre" required="required" type="text" placeholder="Nombres" />
           </div>
 
           <div class="col-md-6">
             <label for="ape" class="uname">APELLIDOS</label><br>
-            <input id="ape" class="form-control" name="usernamesignup" required="required" type="text" placeholder="Apellidos" />
+            <input id="ape" class="form-control" name="apellido" required="required" type="text" placeholder="Apellidos" />
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-6">
-            <label for="" style="margin-bottom: 10px;">SEXO</label><br>
-            <input type="radio" class="form-check-input sizeRadio" name="sexo" id="F"><label style="padding-top: 2px;">FEMENINO</label>
-            <input type="radio" class="form-check-input sizeRadio" name="sexo" id="M"><label>MASCULINO</label>
+            <label for="" >SEXO</label><br>
+            <input type="text" class="form-control" name="sexo" >
+            <!--<input type="radio" class="form-check-input sizeRadio" name="sexo" id="M"><label>MASCULINO</label> -->
           </div>
 
           <div class="col-md-6">
             <label for="iden">IDENTIFICACIÓN</label><br>
-            <input id="number" class="form-control" name="numero" required="required" placeholder="Ej: 102568452" />
+            <input id="number" class="form-control" name="identificacion" required="required" placeholder="Ej: 102568452" />
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-6">
             <label for="date">FECHA DE NACIMIENTO</label><br>
-            <input type="date" class="form-control" id="date" name="trip-start" value="2018-07-22" min="1930-01-01" max="2100-12-31">
+            <input type="date" class="form-control" id="date" name="fecha_naci" value="2018-07-22" min="1930-01-01" max="2100-12-31">
           </div>
 
           <div class="col-md-6">
@@ -114,14 +114,14 @@
         <div class="row">
           <div class="col-md-12">
             <label for="emailsignup" class="youmail">CORREO ELECTRONICO</label><br>
-            <input id="email" class="form-control" name="emailsignup" required="required" type="email" placeholder="ejemplo@gmail.com" />
+            <input id="email" class="form-control" name="correo" required="required" type="email" placeholder="ejemplo@gmail.com" />
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-6">
             <label for="passwordsignup" class="youpasswd">CONTRASEÑA </label><br>
-            <input id="passwor"  class="form-control" name="passwordsignup" required="required" type="password" placeholder="Ej: A15AS"
+            <input id="passwor"  class="form-control" name="password" required="required" type="password" placeholder="Ej: A15AS"
               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
               title="Debe contener al menos un número y una letra minúscula y mayúscula, y al menos 8 o más caracteres" />
           </div>
